@@ -1,0 +1,58 @@
+// Place all the styles related to the People controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+
+}
+
+div a {
+	text-decoration: none;
+
+}
+
+div a:hover {
+	color: black;
+	background-color: orange;
+}
+
+h1 {
+	color: green;
+}
+
+table {
+	border-color: black;
+
+}
+
+thead {
+	background-color: orange;
+
+}
+
+tbody {
+
+}
+
+
+.button {
+	width: 100px;
+	height: 20px;
+	color: yellow;
+	background-color: green;
+	text-align: center;
+	border-radius: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+.button:hover {
+	width: 100px;
+	height: 20px;
+	
+	background-color: orange;
+	text-align: center;
+	
+}

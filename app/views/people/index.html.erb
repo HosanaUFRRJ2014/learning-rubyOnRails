@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>People list</title>
+</head>
+<body>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Listing People</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Birthday</th>
+        <th>Telephone</th>
+        <th colspan="3">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @people.each do |person| %>
+        <tr>
+          <td><%= person.name %></td>
+          <td><%= person.email %></td>
+          <td><%= person.birthday %></td>
+          <td><%= person.telephone %></td>
+          <td>
+            <div class=button>
+                <%= link_to 'Show', person %>
+            </div>
+          </td>
+          <td>
+            <div class=button>
+                <%= link_to 'Edit', edit_person_path(person) %>
+            </div>
+          </td>
+          <td>
+            <div class=button>
+                <%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <div class="button">
+    <%= link_to 'Home', home_path %>    
+  </div>
+  <div class="button">
+    <%= link_to 'New Person', new_person_path %>    
+  </div>
+</body>
+</html>

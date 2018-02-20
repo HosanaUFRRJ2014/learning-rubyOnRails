@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Show Person</title>
+</head>
+<body>
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <strong>Name:</strong>
+	  <%= @person.name %>
+	</p>
+
+	<p>
+	  <strong>Email:</strong>
+	  <%= @person.email %>
+	</p>
+
+	<p>
+	  <strong>Birthday:</strong>
+	  <%= @person.birthday %>
+	</p>
+
+	<p>
+	  <strong>Telephone:</strong>
+	  <%= @person.telephone %>
+	</p>
+
+	<div class=button>
+		<%= link_to 'Edit', edit_person_path(@person) %>
+	</div>
+	<div class=button>
+		<%= link_to 'Back', people_path %>
+	</div>
+	
+</body>
+</html>
