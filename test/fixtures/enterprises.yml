@@ -2,10 +2,8 @@
 
 one:
   name: MyString
-  email: MyString
-  Enterprise_id: 
+  cnpj: MyString
 
 two:
   name: MyString
-  email: MyString
-  Enterprise_id: 
+  cnpj: MyString

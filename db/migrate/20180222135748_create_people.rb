@@ -3,8 +3,7 @@ class CreatePeople < ActiveRecord::Migration
     create_table :people do |t|
       t.string :name
       t.string :email
-      t.date :birthday
-      t.string :telephone
+      t.references :Enterprise, index: true, foreign_key: true
 
       t.timestamps null: false
     end
