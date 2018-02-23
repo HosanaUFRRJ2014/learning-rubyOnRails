@@ -20,8 +20,7 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :Enterprise_id %><br>
-    <%= f.text_field :Enterprise_id%>
+    <%= f.select :Enterprise_id, Enterprise.all.collect { |p| [ p.name, p.cnpj, p.id ] }, include_blank: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

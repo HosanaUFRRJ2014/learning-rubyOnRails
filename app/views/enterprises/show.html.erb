@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Show Enterprise</title>
+</head>
+<body>
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <strong>Name:</strong>
+	  <%= @enterprise.name %>
+	</p>
+	
+	<p>
+	  <strong>CNPJ:</strong>
+	  <%= @enterprise.cnpj %>
+	</p>
+
+	<div class=button>
+		<%= link_to 'Edit', edit_enterprise_path(@enterprise) %>
+	</div>
+	<div class=button>
+		<%= link_to 'Back', enterprises_path %>
+	</div>
+	
+</body>
+</html>

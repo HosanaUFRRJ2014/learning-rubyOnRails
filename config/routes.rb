@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
+  get 'enterprise/new'
+
+  #get 'enterprise/create'
+
+  resources :enterprises
+  resources :enterprises
+
+  get 'enterprises' => 'enterprises#index'
+
   resources :people
   resources :people
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
- # root 'people#index'
-
   root 'welcome#index'
   get 'home' => 'welcome#index'
 

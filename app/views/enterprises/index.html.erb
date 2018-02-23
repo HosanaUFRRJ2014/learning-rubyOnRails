@@ -1,41 +1,40 @@
 <html>
 <head>
-  <title>People list</title>
+  <title>Enterprises list</title>
 </head>
 <body>
   <p id="notice"><%= notice %></p>
 
-  <h1>Listing People</h1>
+  <h1>Listing Enterprises</h1>
 
   <table>
     <thead>
       <tr>
         <th>Name</th>
-        <th>Email</th>
-        <th>Enterprise</th>
+        <th>CNPJ</th>
+       
         <th colspan="3">Action</th>
       </tr>
     </thead>
 
     <tbody>
-      <% @people.each do |person| %>
+      <% @enterprises.each do |enterprise| %>
         <tr>
-          <td><%= person.name %></td>
-          <td><%= person.email %></td>
-          <td><%= person.Enterprise.name %></td>
+          <td><%= enterprise.name %></td>
+          <td><%= enterprise.cnpj %></td>
           <td>
             <div class=button>
-                <%= link_to 'Show', person %>
+                <%= link_to 'Show', enterprise %>
             </div>
           </td>
           <td>
             <div class=button>
-                <%= link_to 'Edit', edit_person_path(person) %>
+                <%= link_to 'Edit', edit_enterprise_path(enterprise) %>
             </div>
           </td>
           <td>
             <div class=button>
-                <%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %>
+                <%= link_to 'Destroy', enterprise, method: :delete, data: { confirm: 'Are you sure?' } %>
             </div>
           </td>
         </tr>
@@ -49,7 +48,7 @@
     <%= link_to 'Home', home_path %>    
   </div>
   <div class="button">
-    <%= link_to 'New Person', new_person_path %>    
+    <%= link_to 'New Enterprise', new_enterprise_path %>    
   </div>
 </body>
 </html>
