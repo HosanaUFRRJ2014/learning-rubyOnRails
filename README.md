@@ -23,7 +23,7 @@ Access the Rails console by typing:
 In the Rails console, type the following instructions in order to generate people and enterprises to the system.
 Obs: To do this, I used [Faker](https://devhints.io/ffaker).
 
-´´´
+
 
 	#generate 100 people
 	100.times do
@@ -43,7 +43,7 @@ Obs: To do this, I used [Faker](https://devhints.io/ffaker).
 		i.Enterprise_id = 1 + rand(10)
 		i.save
 	end
-´´´
+
 
 
 
