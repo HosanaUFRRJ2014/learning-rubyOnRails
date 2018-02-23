@@ -23,7 +23,8 @@ Access the Rails console by typing:
 In the Rails console, type the following instructions in order to generate people and enterprises to the system.
 Obs: To do this, I used [Faker](https://devhints.io/ffaker).
 
-´´´ruby			
+´´´
+
 	#generate 100 people
 	100.times do
 		Person.create(name: Faker::Name.name,email: Faker::Internet.free_email)
